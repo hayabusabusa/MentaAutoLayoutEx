@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Q6z-ro-2wy">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Exercises-->
+        <scene sceneID="GJn-kv-Rgd">
+            <objects>
+                <tableViewController id="XVW-2P-JpS" customClass="ViewController" customModule="MentaAutoLayoutEx" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Gjp-mR-pcX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="mDx-Mk-wMP">
+                                <string key="headerTitle">練習1
+マージンの設定について</string>
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="FVZ-2D-X1F">
+                                        <rect key="frame" x="0.0" y="73.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FVZ-2D-X1F" id="gFr-V8-EMm">
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="練習1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rFY-Nc-gAM">
+                                                    <rect key="frame" x="16" y="4" width="351" height="36"/>
+                                                    <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="rFY-Nc-gAM" secondAttribute="bottom" constant="4" id="3ja-pO-ORW"/>
+                                                <constraint firstAttribute="trailing" secondItem="rFY-Nc-gAM" secondAttribute="trailing" constant="16" id="3sD-gw-BcP"/>
+                                                <constraint firstItem="rFY-Nc-gAM" firstAttribute="leading" secondItem="gFr-V8-EMm" secondAttribute="leading" constant="16" id="qDt-Dp-Wes"/>
+                                                <constraint firstItem="rFY-Nc-gAM" firstAttribute="top" secondItem="gFr-V8-EMm" secondAttribute="top" constant="4" id="zBH-3D-QQN"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="FzT-q2-Pan" kind="show" id="mdG-Q8-nbS"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="XVW-2P-JpS" id="IaS-hd-otp"/>
+                            <outlet property="delegate" destination="XVW-2P-JpS" id="W1v-A8-XPm"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Exercises" id="95C-xr-nuO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fK6-Dn-Tua" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1818.840579710145" y="172.76785714285714"/>
+        </scene>
+        <!--FirstViewController-->
+        <scene sceneID="m1h-4C-0yF">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FirstViewController" id="FzT-q2-Pan" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="LlY-uf-E1q"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2og-L1-WSF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2455" y="-7"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3pU-y2-aUD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Q6z-ro-2wy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="b6h-BS-4bT">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="XVW-2P-JpS" kind="relationship" relationship="rootViewController" id="9eO-o9-ZGh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aad-ZV-JYv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="908.69565217391312" y="172.76785714285714"/>
+        </scene>
+    </scenes>
+</document>
