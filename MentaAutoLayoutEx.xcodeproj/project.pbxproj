@@ -33,6 +33,7 @@
 		A571F4F524E13D9100D2766A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A571F4F724E68AC100D2766A /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		A571F4F924E68B0B00D2766A /* SecondViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SecondViewController.storyboard; sourceTree = "<group>"; };
+		A571F4FB24E759D900D2766A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +100,7 @@
 		A571F4F624E68AAD00D2766A /* Second */ = {
 			isa = PBXGroup;
 			children = (
+				A571F4FB24E759D900D2766A /* README.md */,
 				A571F4F724E68AC100D2766A /* SecondViewController.swift */,
 				A571F4F924E68B0B00D2766A /* SecondViewController.storyboard */,
 			);
