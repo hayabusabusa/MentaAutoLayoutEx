@@ -2,6 +2,13 @@
 
 Auto Layout の基本を学ぶ課題一覧です。
 
+## 練習課題一覧
+
+| リンク | 内容 |
+| :---- | :-- |
+| [練習課題1](https://github.com/hayabusabusa/MentaAutoLayoutEx/tree/master/MentaAutoLayoutEx/Exercises/First) | 余白の設定について |
+| [練習課題2](https://github.com/hayabusabusa/MentaAutoLayoutEx/tree/master/MentaAutoLayoutEx/Exercises/Second) | 並びの設定について |
+
 ## 参考記事一覧
 課題作成にあたり参考にさせていただいた記事一覧です。
 
