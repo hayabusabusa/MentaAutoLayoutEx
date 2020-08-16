@@ -16,10 +16,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="幅と高さを固定したラベルです。幅と高さを固定したラベルです。幅と高さを固定したラベルです。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VPt-p9-6dJ">
-                                <rect key="frame" x="87" y="407.5" width="240" height="81.5"/>
+                                <rect key="frame" x="107" y="420" width="200" height="56"/>
                                 <color key="backgroundColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="0.39725462147887325" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="Faz-fV-S7F"/>
+                                    <constraint firstAttribute="height" constant="56" id="E0n-3Y-eGh"/>
+                                    <constraint firstAttribute="width" constant="200" id="Faz-fV-S7F"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
