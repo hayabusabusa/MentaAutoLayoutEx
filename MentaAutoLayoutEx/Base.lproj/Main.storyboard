@@ -75,6 +75,36 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection id="w8O-vj-rj2">
+                                <string key="headerTitle">練習課題3
+幅と高さの設定について</string>
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="ZCo-Nm-lfu">
+                                        <rect key="frame" x="0.0" y="308.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZCo-Nm-lfu" id="D0i-cZ-sTk">
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="練習課題3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OpH-bM-kFn">
+                                                    <rect key="frame" x="16" y="4" width="351" height="36"/>
+                                                    <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="OpH-bM-kFn" firstAttribute="top" secondItem="D0i-cZ-sTk" secondAttribute="top" constant="4" id="4MG-3W-lCc"/>
+                                                <constraint firstItem="OpH-bM-kFn" firstAttribute="leading" secondItem="D0i-cZ-sTk" secondAttribute="leading" constant="16" id="8vr-S4-7Hi"/>
+                                                <constraint firstAttribute="bottom" secondItem="OpH-bM-kFn" secondAttribute="bottom" constant="4" id="JYF-qo-73q"/>
+                                                <constraint firstAttribute="trailing" secondItem="OpH-bM-kFn" secondAttribute="trailing" constant="16" id="fna-6B-kK1"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="jyy-sf-Z7T" kind="show" id="EDw-E2-SbA"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="XVW-2P-JpS" id="IaS-hd-otp"/>
@@ -106,6 +136,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SzD-ar-WxW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2477" y="-75"/>
+        </scene>
+        <!--ThirdViewController-->
+        <scene sceneID="85z-I2-Twl">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ThirdViewController" id="jyy-sf-Z7T" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="3Ri-ft-ZDv"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k1p-Rj-5GH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2467" y="-25"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3pU-y2-aUD">
