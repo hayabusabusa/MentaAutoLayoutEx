@@ -15,29 +15,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="幅と高さを固定したラベルです。幅と高さを固定したラベルです。幅と高さを固定したラベルです。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VPt-p9-6dJ">
-                                <rect key="frame" x="107" y="420" width="200" height="56"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="幅と高さを固定したラベルです。幅と高さを固定したラベルです。幅と高さを固定したラベルです。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VPt-p9-6dJ">
+                                <rect key="frame" x="9" y="423" width="396" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="0.39725462147887325" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="56" id="E0n-3Y-eGh"/>
-                                    <constraint firstAttribute="width" constant="200" id="Faz-fV-S7F"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="VPt-p9-6dJ" firstAttribute="centerX" secondItem="dp4-wX-SnZ" secondAttribute="centerX" id="0a1-Sl-gIs"/>
-                            <constraint firstItem="VPt-p9-6dJ" firstAttribute="centerY" secondItem="dp4-wX-SnZ" secondAttribute="centerY" id="yK6-lm-DOl"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Z5J-6j-TRf"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ggq-B0-cDk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="159" y="160"/>
+            <point key="canvasLocation" x="155.07246376811597" y="159.375"/>
         </scene>
     </scenes>
 </document>
