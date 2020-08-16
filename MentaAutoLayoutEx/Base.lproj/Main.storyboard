@@ -16,11 +16,12 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
                             <tableViewSection id="mDx-Mk-wMP">
-                                <string key="headerTitle">練習課題1
-余白の設定について</string>
+                                <string key="headerTitle">基本課題
+
+Auto Layout の基本的な制約を使用する課題です。</string>
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="FVZ-2D-X1F">
-                                        <rect key="frame" x="0.0" y="73.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="91.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FVZ-2D-X1F" id="gFr-V8-EMm">
                                             <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
@@ -43,64 +44,76 @@
                                             <segue destination="FzT-q2-Pan" kind="show" id="mdG-Q8-nbS"/>
                                         </connections>
                                     </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                            <tableViewSection id="ykI-dJ-wOu">
-                                <string key="headerTitle">練習課題2
-並びの設定について</string>
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="Ekg-BG-6Qx">
-                                        <rect key="frame" x="0.0" y="191" width="414" height="43.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="1xx-t7-HA2">
+                                        <rect key="frame" x="0.0" y="135" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ekg-BG-6Qx" id="6Ap-A1-RGr">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1xx-t7-HA2" id="n46-hN-izs">
                                             <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="練習課題2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zAf-Qy-Xe0">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="練習課題2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="INy-gr-uXP">
                                                     <rect key="frame" x="16" y="4" width="351" height="36"/>
                                                     <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="zAf-Qy-Xe0" firstAttribute="top" secondItem="6Ap-A1-RGr" secondAttribute="top" constant="4" id="0VM-3j-3Qg"/>
-                                                <constraint firstAttribute="trailing" secondItem="zAf-Qy-Xe0" secondAttribute="trailing" constant="16" id="Ezp-fQ-1re"/>
-                                                <constraint firstItem="zAf-Qy-Xe0" firstAttribute="leading" secondItem="6Ap-A1-RGr" secondAttribute="leading" constant="16" id="olh-Cj-mnf"/>
-                                                <constraint firstAttribute="bottom" secondItem="zAf-Qy-Xe0" secondAttribute="bottom" constant="4" id="t7y-Zo-dK7"/>
+                                                <constraint firstItem="INy-gr-uXP" firstAttribute="top" secondItem="n46-hN-izs" secondAttribute="top" constant="4" id="B6g-cn-UFg"/>
+                                                <constraint firstAttribute="bottom" secondItem="INy-gr-uXP" secondAttribute="bottom" constant="4" id="KhL-WM-AxA"/>
+                                                <constraint firstAttribute="trailing" secondItem="INy-gr-uXP" secondAttribute="trailing" constant="16" id="Szz-zZ-at5"/>
+                                                <constraint firstItem="INy-gr-uXP" firstAttribute="leading" secondItem="n46-hN-izs" secondAttribute="leading" constant="16" id="ceT-6K-fRC"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="lMi-xf-xrR" kind="show" id="ZAy-gt-sm1"/>
+                                            <segue destination="lMi-xf-xrR" kind="show" id="kpt-fM-ojy"/>
                                         </connections>
                                     </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                            <tableViewSection id="w8O-vj-rj2">
-                                <string key="headerTitle">練習課題3
-幅と高さの設定について</string>
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="ZCo-Nm-lfu">
-                                        <rect key="frame" x="0.0" y="308.5" width="414" height="43.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="1zA-Ok-Rfi">
+                                        <rect key="frame" x="0.0" y="178.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZCo-Nm-lfu" id="D0i-cZ-sTk">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1zA-Ok-Rfi" id="0Ff-bf-xzq">
                                             <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="練習課題3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OpH-bM-kFn">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="練習課題3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3W-hX-LFZ">
                                                     <rect key="frame" x="16" y="4" width="351" height="36"/>
                                                     <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="OpH-bM-kFn" firstAttribute="top" secondItem="D0i-cZ-sTk" secondAttribute="top" constant="4" id="4MG-3W-lCc"/>
-                                                <constraint firstItem="OpH-bM-kFn" firstAttribute="leading" secondItem="D0i-cZ-sTk" secondAttribute="leading" constant="16" id="8vr-S4-7Hi"/>
-                                                <constraint firstAttribute="bottom" secondItem="OpH-bM-kFn" secondAttribute="bottom" constant="4" id="JYF-qo-73q"/>
-                                                <constraint firstAttribute="trailing" secondItem="OpH-bM-kFn" secondAttribute="trailing" constant="16" id="fna-6B-kK1"/>
+                                                <constraint firstItem="g3W-hX-LFZ" firstAttribute="top" secondItem="0Ff-bf-xzq" secondAttribute="top" constant="4" id="AbX-cO-nXc"/>
+                                                <constraint firstAttribute="trailing" secondItem="g3W-hX-LFZ" secondAttribute="trailing" constant="16" id="el3-Hr-fql"/>
+                                                <constraint firstItem="g3W-hX-LFZ" firstAttribute="leading" secondItem="0Ff-bf-xzq" secondAttribute="leading" constant="16" id="ipb-Fy-PCC"/>
+                                                <constraint firstAttribute="bottom" secondItem="g3W-hX-LFZ" secondAttribute="bottom" constant="4" id="z3T-wZ-w2R"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="jyy-sf-Z7T" kind="show" id="EDw-E2-SbA"/>
+                                            <segue destination="jyy-sf-Z7T" kind="show" id="wVg-cQ-pNh"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="zy8-kT-Squ">
+                                        <rect key="frame" x="0.0" y="222" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zy8-kT-Squ" id="tk4-z0-fi6">
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="練習課題4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D0m-r0-6S4">
+                                                    <rect key="frame" x="16" y="4" width="351" height="36"/>
+                                                    <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="D0m-r0-6S4" firstAttribute="top" secondItem="tk4-z0-fi6" secondAttribute="top" constant="4" id="0e8-0L-Kij"/>
+                                                <constraint firstAttribute="bottom" secondItem="D0m-r0-6S4" secondAttribute="bottom" constant="4" id="PDb-9v-jdk"/>
+                                                <constraint firstItem="D0m-r0-6S4" firstAttribute="leading" secondItem="tk4-z0-fi6" secondAttribute="leading" constant="16" id="Xrg-nv-aOf"/>
+                                                <constraint firstAttribute="trailing" secondItem="D0m-r0-6S4" secondAttribute="trailing" constant="16" id="noH-az-jtg"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="ZPR-LE-TPO" kind="show" id="b9i-Mz-4GU"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -125,7 +138,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2og-L1-WSF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2465" y="-119"/>
+            <point key="canvasLocation" x="2458" y="-48"/>
         </scene>
         <!--SecondViewController-->
         <scene sceneID="Rcf-R2-b18">
@@ -135,7 +148,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SzD-ar-WxW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2477" y="-75"/>
+            <point key="canvasLocation" x="2471" y="-1"/>
         </scene>
         <!--ThirdViewController-->
         <scene sceneID="85z-I2-Twl">
@@ -145,7 +158,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k1p-Rj-5GH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2467" y="-25"/>
+            <point key="canvasLocation" x="2460" y="54"/>
+        </scene>
+        <!--FourthViewController-->
+        <scene sceneID="UNr-ji-xER">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FourthViewController" id="ZPR-LE-TPO" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="djI-MV-Cwz"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3YM-d1-SZl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2464" y="106"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3pU-y2-aUD">
