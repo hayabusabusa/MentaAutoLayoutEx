@@ -6,6 +6,8 @@
 //  Copyright © 2020 Shunya Yamada. All rights reserved.
 //
 
+//git 練習
+
 import UIKit
 
 final class FirstViewController: UIViewController {
