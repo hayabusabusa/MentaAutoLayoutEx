@@ -116,6 +116,30 @@ Auto Layout の基本的な制約を使用する課題です。</string>
                                             <segue destination="ZPR-LE-TPO" kind="show" id="b9i-Mz-4GU"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="jXN-rX-aEO">
+                                        <rect key="frame" x="0.0" y="265.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jXN-rX-aEO" id="CMv-nb-hb4">
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="練習課題5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="klb-F2-FdV">
+                                                    <rect key="frame" x="16" y="4" width="351" height="36"/>
+                                                    <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="klb-F2-FdV" secondAttribute="bottom" constant="4" id="A8A-vg-TDI"/>
+                                                <constraint firstAttribute="trailing" secondItem="klb-F2-FdV" secondAttribute="trailing" constant="16" id="Eu4-IE-bCY"/>
+                                                <constraint firstItem="klb-F2-FdV" firstAttribute="top" secondItem="CMv-nb-hb4" secondAttribute="top" constant="4" id="GSL-ko-2f5"/>
+                                                <constraint firstItem="klb-F2-FdV" firstAttribute="leading" secondItem="CMv-nb-hb4" secondAttribute="leading" constant="16" id="MZc-ox-xEH"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="yGY-55-3FS" kind="show" id="y51-Wz-nfE"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -138,7 +162,7 @@ Auto Layout の基本的な制約を使用する課題です。</string>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2og-L1-WSF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2458" y="-48"/>
+            <point key="canvasLocation" x="2455" y="-143"/>
         </scene>
         <!--SecondViewController-->
         <scene sceneID="Rcf-R2-b18">
@@ -148,7 +172,7 @@ Auto Layout の基本的な制約を使用する課題です。</string>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SzD-ar-WxW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2471" y="-1"/>
+            <point key="canvasLocation" x="2468" y="-119"/>
         </scene>
         <!--ThirdViewController-->
         <scene sceneID="85z-I2-Twl">
@@ -158,7 +182,7 @@ Auto Layout の基本的な制約を使用する課題です。</string>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k1p-Rj-5GH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2460" y="54"/>
+            <point key="canvasLocation" x="2457" y="-94"/>
         </scene>
         <!--FourthViewController-->
         <scene sceneID="UNr-ji-xER">
@@ -168,7 +192,17 @@ Auto Layout の基本的な制約を使用する課題です。</string>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3YM-d1-SZl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2464" y="106"/>
+            <point key="canvasLocation" x="2462" y="-68"/>
+        </scene>
+        <!--FifthViewController-->
+        <scene sceneID="UBw-X1-bPB">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FifthViewController" id="yGY-55-3FS" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="fco-Tc-JUT"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CGu-MV-J1D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2454" y="-41"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3pU-y2-aUD">

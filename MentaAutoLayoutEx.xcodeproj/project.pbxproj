@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7118EC0824EA172F004A3530 /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7118EC0724EA172F004A3530 /* FifthViewController.swift */; };
+		7118EC0A24EA174A004A3530 /* FifthViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7118EC0924EA174A004A3530 /* FifthViewController.storyboard */; };
+		7118EC0F24EA1A0C004A3530 /* FifthViewControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7118EC0D24EA1A0C004A3530 /* FifthViewControllerCell.swift */; };
+		7118EC1024EA1A0C004A3530 /* FifthViewControllerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7118EC0E24EA1A0C004A3530 /* FifthViewControllerCell.xib */; };
+		7118EC1324EA1C19004A3530 /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7118EC1224EA1C19004A3530 /* Mock.swift */; };
+		7118EC1524EA2BB9004A3530 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7118EC1424EA2BB9004A3530 /* ImageView.swift */; };
 		A510E79B24E94B0A000ADAD4 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A510E79A24E94B0A000ADAD4 /* ThirdViewController.swift */; };
 		A510E79D24E94B5D000ADAD4 /* ThirdViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A510E79C24E94B5D000ADAD4 /* ThirdViewController.storyboard */; };
 		A510E7A124E97FE3000ADAD4 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A510E7A024E97FE3000ADAD4 /* FourthViewController.swift */; };
@@ -25,6 +31,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7118EC0724EA172F004A3530 /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
+		7118EC0924EA174A004A3530 /* FifthViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FifthViewController.storyboard; sourceTree = "<group>"; };
+		7118EC0B24EA1764004A3530 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7118EC0D24EA1A0C004A3530 /* FifthViewControllerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewControllerCell.swift; sourceTree = "<group>"; };
+		7118EC0E24EA1A0C004A3530 /* FifthViewControllerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FifthViewControllerCell.xib; sourceTree = "<group>"; };
+		7118EC1224EA1C19004A3530 /* Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mock.swift; sourceTree = "<group>"; };
+		7118EC1424EA2BB9004A3530 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		A510E79A24E94B0A000ADAD4 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		A510E79C24E94B5D000ADAD4 /* ThirdViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ThirdViewController.storyboard; sourceTree = "<group>"; };
 		A510E79E24E94B89000ADAD4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -59,6 +72,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7118EC0624EA14D4004A3530 /* Fifth */ = {
+			isa = PBXGroup;
+			children = (
+				7118EC0B24EA1764004A3530 /* README.md */,
+				7118EC0724EA172F004A3530 /* FifthViewController.swift */,
+				7118EC0924EA174A004A3530 /* FifthViewController.storyboard */,
+				7118EC0C24EA1924004A3530 /* Cell */,
+			);
+			path = Fifth;
+			sourceTree = "<group>";
+		};
+		7118EC0C24EA1924004A3530 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7118EC0D24EA1A0C004A3530 /* FifthViewControllerCell.swift */,
+				7118EC0E24EA1A0C004A3530 /* FifthViewControllerCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		7118EC1124EA1C0C004A3530 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				7118EC1224EA1C19004A3530 /* Mock.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		A510E79924E94AF0000ADAD4 /* Third */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +123,7 @@
 		A510E7A524E9839A000ADAD4 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				7118EC1124EA1C0C004A3530 /* Util */,
 				A510E7A624E983A4000ADAD4 /* View */,
 			);
 			path = Common;
@@ -91,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				A510E7A724E9847C000ADAD4 /* Button.swift */,
+				7118EC1424EA2BB9004A3530 /* ImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -134,6 +177,7 @@
 				A571F4F624E68AAD00D2766A /* Second */,
 				A510E79924E94AF0000ADAD4 /* Third */,
 				A510E79F24E97FCE000ADAD4 /* Fourth */,
+				7118EC0624EA14D4004A3530 /* Fifth */,
 			);
 			path = Exercises;
 			sourceTree = "<group>";
@@ -220,7 +264,9 @@
 				A571F4F424E104B500D2766A /* FirstViewController.storyboard in Resources */,
 				A571F4E724E102DF00D2766A /* LaunchScreen.storyboard in Resources */,
 				A571F4FA24E68B0B00D2766A /* SecondViewController.storyboard in Resources */,
+				7118EC1024EA1A0C004A3530 /* FifthViewControllerCell.xib in Resources */,
 				A510E79D24E94B5D000ADAD4 /* ThirdViewController.storyboard in Resources */,
+				7118EC0A24EA174A004A3530 /* FifthViewController.storyboard in Resources */,
 				A571F4E424E102DF00D2766A /* Assets.xcassets in Resources */,
 				A571F4E224E102DE00D2766A /* Main.storyboard in Resources */,
 			);
@@ -233,9 +279,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7118EC1524EA2BB9004A3530 /* ImageView.swift in Sources */,
+				7118EC1324EA1C19004A3530 /* Mock.swift in Sources */,
+				7118EC0824EA172F004A3530 /* FifthViewController.swift in Sources */,
 				A571F4DF24E102DE00D2766A /* ViewController.swift in Sources */,
 				A571F4DB24E102DE00D2766A /* AppDelegate.swift in Sources */,
 				A571F4DD24E102DE00D2766A /* SceneDelegate.swift in Sources */,
+				7118EC0F24EA1A0C004A3530 /* FifthViewControllerCell.swift in Sources */,
 				A510E7A824E9847C000ADAD4 /* Button.swift in Sources */,
 				A510E7A124E97FE3000ADAD4 /* FourthViewController.swift in Sources */,
 				A571F4F824E68AC100D2766A /* SecondViewController.swift in Sources */,
