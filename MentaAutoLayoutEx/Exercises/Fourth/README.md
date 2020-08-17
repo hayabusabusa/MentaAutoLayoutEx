@@ -5,7 +5,7 @@
 
 | 期待する画面 | 制約の詳細 |
 | :--------: | :------: |
-| ![Simulator Screen Shot - iPhone 11 - 2020-08-17 at 09 05 31](https://user-images.githubusercontent.com/31949692/90347492-cb96c680-e06b-11ea-9bbb-69fa3f177610.png) | ![ex4](https://user-images.githubusercontent.com/31949692/90347582-61caec80-e06c-11ea-8bc3-7792325b1657.png) |
+| ![Simulator Screen Shot - iPhone 11 - 2020-08-17 at 09 05 31](https://user-images.githubusercontent.com/31949692/90347492-cb96c680-e06b-11ea-9bbb-69fa3f177610.png) | ![ex4](https://user-images.githubusercontent.com/31949692/90349258-27fde400-e074-11ea-86a8-e7e50dc4a052.png) |
 
 ## 実装のヒント
 
