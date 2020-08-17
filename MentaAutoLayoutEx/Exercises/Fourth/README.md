@@ -39,6 +39,10 @@ Xcode 下部のツールバー **Add New Constraints** から行えますが、
 
 間違えて Auto Layout の制約を作成してしまった場合、  
 Xcode 下部のツールバー **Resolve Auto Layout Issues** から削除することができます。  
-制約を削除したい部品を選択した状態でメニューから **Clear Constraints** を選択すると削除されます。  
+制約を削除したい部品を選択した状態でメニューから **Clear Constraints** を選択すると削除されます。   
+この場合選択した部品の全ての制約が削除されてしまうので注意が必要です。
 
 ![スクリーンショット 2020-08-17 10 01 20](https://user-images.githubusercontent.com/31949692/90348606-b329aa80-e071-11ea-8298-e344ce5ec8dc.png)
+
+個別に Auto Layout の制約を削除したい場合は **Size Inspector** から表示されている制約を選択した状態で  
+**delete** キーを押すことで削除が可能です。
