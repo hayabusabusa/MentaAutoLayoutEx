@@ -7,6 +7,9 @@
 | :--------: | :------: |
 | ![Simulator Screen Shot - iPhone 11 - 2020-08-17 at 09 05 31](https://user-images.githubusercontent.com/31949692/90347492-cb96c680-e06b-11ea-9bbb-69fa3f177610.png) | ![ex4](https://user-images.githubusercontent.com/31949692/90349258-27fde400-e074-11ea-86a8-e7e50dc4a052.png) |
 
+上記の画像は iPhone11 の画像ですが、
+実装の際には iPhone11 での表示だけではなく、必ず初代 iPhoneSE などの画面が小さい端末でも同じ表示になることを確認してください。
+
 ## 実装のヒント
 
 以下は実装する上でのヒントになります。  

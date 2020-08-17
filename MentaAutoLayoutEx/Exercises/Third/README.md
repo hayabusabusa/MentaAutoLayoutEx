@@ -22,6 +22,9 @@
 | :--------------: | :-----------: |
 | ![Simulator Screen Shot - iPhone 11 - 2020-08-16 at 20 53 06](https://user-images.githubusercontent.com/31949692/90333744-2b0cbc00-e003-11ea-8892-7e550267aa8d.png) | ![ex3](https://user-images.githubusercontent.com/31949692/90333752-4e376b80-e003-11ea-912b-ed621f9d2f1b.png) |
 
+上記の画像は iPhone11 の画像ですが、
+実装の際には iPhone11 での表示だけではなく、必ず初代 iPhoneSE などの画面が小さい端末でも同じ表示になることを確認してください。
+
 ### 追加で確認して欲しいこと
 
 - 高さ、幅だけの制約では Auto Layout のエラーが発生してしまうこと
