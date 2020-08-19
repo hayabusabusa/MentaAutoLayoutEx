@@ -19,7 +19,7 @@
 
 | 期待する画面 | 制約の詳細 |
 | :--------: | :------: |
-| ![Simulator Screen Shot - iPhone 11 - 2020-08-19 at 15 19 55](https://user-images.githubusercontent.com/31949692/90599297-8b804100-e22f-11ea-9b4a-e83337f85531.png) | ![ex6](https://user-images.githubusercontent.com/31949692/90600067-dd759680-e230-11ea-97e2-0f267c5b874f.png) |
+| ![Simulator Screen Shot - iPhone 11 - 2020-08-19 at 15 19 55](https://user-images.githubusercontent.com/31949692/90599297-8b804100-e22f-11ea-9b4a-e83337f85531.png) | ![ex6](https://user-images.githubusercontent.com/31949692/90626526-09574300-e256-11ea-90da-65a461735f08.png) |
 
 上記の画像は iPhone11 の画像ですが、  
 実装の際には iPhone11 での表示だけではなく、必ず初代 iPhoneSE などの画面が小さい端末でも同じ表示になることを確認してください。
@@ -64,13 +64,60 @@ Xcode 画面下部のメニューから **Embed In** を選択し、**Stack View
 これでそれぞれのグループに UIStackView を適応させ、まとめることができました。
 
 ### UIStackView の設定
-WIP
+
+UIStackView を適応し、グループ化することができましたが、  
+このままでは UIStackView の設定が自動で設定されたものになっているので設定を編集します。
+
+UIStackView を選択すると **Attribute Inspector** に以下のような設定が表示されます。
+
+| UIStackView の設定  |
+| :----------------: |
+| ![スクリーンショット 2020-08-19 16 54 28](https://user-images.githubusercontent.com/31949692/90607785-ac02c800-e23c-11ea-959b-8e8e2118b70f.png) |
+
+それぞれの設定は以下のようになっています。
+
+- Axis: 軸の設定、縦並び、横並びを設定できます。
+- Alignment: どのように並ぶかを設定できます。幅いっぱいに並ぶ **Fill** を使うことが多いです。
+- Distribution: 並び方の詳細なオプションのようなものです。少し複雑なので、詳細は[参考記事](https://qiita.com/taka1068/items/69273f05d34cfbeb3679)を確認してください。
+- Spacing: まとめた部品同士の間隔を設定できます。
+
+この設定をグループA、グループBそれぞれ以下のようにします。
+
+| グループAの設定 | グループBの設定 |
+| :----------: | :-----------: |
+| ![スクリーンショット 2020-08-19 19 57 30](https://user-images.githubusercontent.com/31949692/90626828-5dfabe00-e256-11ea-8ca9-35451f4f8152.png) | ![スクリーンショット 2020-08-19 19 57 44](https://user-images.githubusercontent.com/31949692/90626881-694de980-e256-11ea-81b5-3a9d22bbcfbc.png) |
 
 ### Auto Layout の制約を追加
-WIP
+
+このままでは複数の部品をまとめただけなので、  
+最後に Auto Layout の制約を追加して固定します。
+
+一番外側の UIStackView に対して**上下14pxの余白、左右16pxの余白**の制約を付けます。  
+そのままでは ImageView とボタンのサイズが決まっていないため、ImageView には**幅、高さが 1:1 になる制約**、  
+ボタンは**幅が80pxになる制約**を付ければ完成です。
+
+なお 1:1 のように幅、高さを比率で設定するには **Control** キーを押しながら部品の上ではなすことでメニューが表示され、  
+**Aspect Ratio** の項目から設定することができます。そのままでは現在の値が設定されているので、**Size Inspector** から値を 1:1 に編集します。
+
+| Aspect Ration の設定 | 制約の編集 |
+| :-----------------: | :------: |
+| ![Aug-19-2020 20-39-27](https://user-images.githubusercontent.com/31949692/90630703-7d94e500-e25c-11ea-8149-243f897d2cda.gif) | ![スクリーンショット 2020-08-19 20 37 11](https://user-images.githubusercontent.com/31949692/90630758-91404b80-e25c-11ea-860c-4980c5f9ae0e.png) |
 
 ### UIStackView の威力を確認する
-WIP
+
+この状態で縦に並んだ二つのラベルの位置を交換してみます。  
+やり方は簡単で、Storyboard 左の View の階層から部品の順番を入れ替えるだけです。
+
+![Aug-19-2020 20-55-20](https://user-images.githubusercontent.com/31949692/90631802-56d7ae00-e25e-11ea-9012-312856723967.gif)
+
+Auto Layout 等をリセットすることなく入れ替えることができるのでかなり強力ですが、  
+ラベルとボタンの間に新しくボタンを挿入することも簡単にできます。
+
+![Aug-19-2020 20-57-22](https://user-images.githubusercontent.com/31949692/90631979-9b634980-e25e-11ea-8b33-7f79e567e009.gif)
+
+他にも `isHidden` プロパティを切り替えることで表示非表示 + トルツメをすることも可能です。  
+また、グループにしてまとめたことにより Auto Layout の制約の数も大幅に少なくすることができます。  
+このように UIStackView を使うことで多くのメリットがあるので、積極的に使用してください。
 
 ### UIStackView について参考記事
 
