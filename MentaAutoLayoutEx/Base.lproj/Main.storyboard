@@ -142,6 +142,37 @@ Auto Layout の基本的な制約を使用する課題です。</string>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection id="WJD-gB-Doa">
+                                <string key="headerTitle">実践課題
+
+UIStackView を使用し、より複雑な画面に柔軟に対応します。</string>
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="kbS-jv-jM2">
+                                        <rect key="frame" x="0.0" y="419" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kbS-jv-jM2" id="gYL-Gb-6vT">
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="練習課題6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Df8-GI-fNk">
+                                                    <rect key="frame" x="16" y="4" width="351" height="36"/>
+                                                    <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Df8-GI-fNk" secondAttribute="trailing" constant="16" id="60m-Og-Pjr"/>
+                                                <constraint firstAttribute="bottom" secondItem="Df8-GI-fNk" secondAttribute="bottom" constant="4" id="QQE-ke-JyU"/>
+                                                <constraint firstItem="Df8-GI-fNk" firstAttribute="leading" secondItem="gYL-Gb-6vT" secondAttribute="leading" constant="16" id="eLS-cr-5M9"/>
+                                                <constraint firstItem="Df8-GI-fNk" firstAttribute="top" secondItem="gYL-Gb-6vT" secondAttribute="top" constant="4" id="oGs-n8-DRA"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Fd0-m9-iCL" kind="show" id="ir7-vB-4EN"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="XVW-2P-JpS" id="IaS-hd-otp"/>
@@ -203,6 +234,16 @@ Auto Layout の基本的な制約を使用する課題です。</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CGu-MV-J1D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2454" y="-41"/>
+        </scene>
+        <!--SixthViewController-->
+        <scene sceneID="yZI-zX-kjv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SixthViewController" id="Fd0-m9-iCL" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Tgs-8M-KuT"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="unT-tg-Mf6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2469" y="33"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3pU-y2-aUD">
