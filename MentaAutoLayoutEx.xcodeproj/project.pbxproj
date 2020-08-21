@@ -59,7 +59,7 @@
 		A510E7A224E97FFA000ADAD4 /* FourthViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FourthViewController.storyboard; sourceTree = "<group>"; };
 		A510E7A424E98017000ADAD4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A510E7A724E9847C000ADAD4 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
-		A571F4D724E102DE00D2766A /* MentaAutoLayoutEx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MentaAutoLayoutEx.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A571F4D724E102DE00D2766A /* MALayoutEx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MALayoutEx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A571F4DA24E102DE00D2766A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A571F4DC24E102DE00D2766A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A571F4DE24E102DE00D2766A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -193,7 +193,7 @@
 		A571F4D824E102DE00D2766A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A571F4D724E102DE00D2766A /* MentaAutoLayoutEx.app */,
+				A571F4D724E102DE00D2766A /* MALayoutEx.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -265,7 +265,7 @@
 			);
 			name = MentaAutoLayoutEx;
 			productName = MentaAutoLayoutEx;
-			productReference = A571F4D724E102DE00D2766A /* MentaAutoLayoutEx.app */;
+			productReference = A571F4D724E102DE00D2766A /* MALayoutEx.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -493,7 +493,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ShunyaYamada.MentaAutoLayoutEx;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MALayoutEx;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -510,7 +510,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ShunyaYamada.MentaAutoLayoutEx;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MALayoutEx;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
