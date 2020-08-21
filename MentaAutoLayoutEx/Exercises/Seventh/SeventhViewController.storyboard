@@ -10,11 +10,87 @@
         <!--Seventh View Controller-->
         <scene sceneID="xA9-5c-W7Z">
             <objects>
-                <viewController id="BZH-of-L6J" customClass="SeventhViewController" customModule="MentaAutoLayoutEx" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BZH-of-L6J" customClass="SeventhViewController" customModule="MALayoutEx" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="elU-fq-lru">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9Dy-9k-FSC">
+                                <rect key="frame" x="24" y="84" width="366" height="110"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="練習課題7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nPo-tL-mQK">
+                                        <rect key="frame" x="0.0" y="0.0" width="366" height="22"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="22"/>
+                                        <color key="textColor" red="0.074509803921568626" green="0.69411764705882351" blue="0.75294117647058822" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="94f-5T-pBQ">
+                                        <rect key="frame" x="0.0" y="30" width="366" height="80"/>
+                                        <string key="text">UIStackView と通常の Auto Layout を組み合わせて画面を作成します。
+入力処理は実装していないので、キーボードによるテキストフィールドの位置調整は実装していません。</string>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="16"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="認証番号" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="l5r-wN-KJc">
+                                <rect key="frame" x="24" y="428" width="366" height="40"/>
+                                <color key="tintColor" red="0.074509803920000006" green="0.69411764710000001" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="RFx-nQ-9PQ"/>
+                                </constraints>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="avr-Ud-0v6">
+                                <rect key="frame" x="24" y="764" width="366" height="74"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FqJ-PF-k8l" customClass="Button" customModule="MALayoutEx" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="366" height="40"/>
+                                        <color key="backgroundColor" red="0.074509803920000006" green="0.69411764710000001" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="rff-iF-5vi"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
+                                        <state key="normal" title="送信">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onTapSendButton:" destination="BZH-of-L6J" eventType="touchUpInside" id="qOB-dd-OuS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4wj-hU-lNo">
+                                        <rect key="frame" x="0.0" y="48" width="366" height="26"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
+                                        <state key="normal" title="前の画面に戻る">
+                                            <color key="titleColor" red="0.074509803920000006" green="0.69411764710000001" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onTapBackButton:" destination="BZH-of-L6J" eventType="touchUpInside" id="lSp-fH-JP0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="9Dy-9k-FSC" firstAttribute="leading" secondItem="RSR-mY-8iY" secondAttribute="leading" constant="24" id="BkF-Rq-O2s"/>
+                            <constraint firstItem="RSR-mY-8iY" firstAttribute="bottom" secondItem="avr-Ud-0v6" secondAttribute="bottom" constant="24" id="Ha4-m6-9oL"/>
+                            <constraint firstItem="l5r-wN-KJc" firstAttribute="leading" secondItem="RSR-mY-8iY" secondAttribute="leading" constant="24" id="TBD-Uc-B7j"/>
+                            <constraint firstItem="RSR-mY-8iY" firstAttribute="trailing" secondItem="l5r-wN-KJc" secondAttribute="trailing" constant="24" id="ZoS-cj-2RG"/>
+                            <constraint firstItem="RSR-mY-8iY" firstAttribute="trailing" secondItem="avr-Ud-0v6" secondAttribute="trailing" constant="24" id="eWK-Ea-SUS"/>
+                            <constraint firstItem="9Dy-9k-FSC" firstAttribute="top" secondItem="RSR-mY-8iY" secondAttribute="top" constant="40" id="hf7-vN-fSV"/>
+                            <constraint firstItem="avr-Ud-0v6" firstAttribute="leading" secondItem="RSR-mY-8iY" secondAttribute="leading" constant="24" id="jcH-dI-Pd3"/>
+                            <constraint firstItem="RSR-mY-8iY" firstAttribute="trailing" secondItem="9Dy-9k-FSC" secondAttribute="trailing" constant="24" id="oYn-K3-35k"/>
+                            <constraint firstItem="l5r-wN-KJc" firstAttribute="centerY" secondItem="elU-fq-lru" secondAttribute="centerY" id="zcH-TX-iEI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="RSR-mY-8iY"/>
                     </view>
                 </viewController>
