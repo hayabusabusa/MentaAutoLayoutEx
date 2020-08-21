@@ -171,6 +171,30 @@ UIStackView を使用し、より複雑な画面に柔軟に対応します。</
                                             <segue destination="Fd0-m9-iCL" kind="show" id="ir7-vB-4EN"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="PyC-cx-Ipb">
+                                        <rect key="frame" x="0.0" y="462.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PyC-cx-Ipb" id="RMu-PI-0NT">
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="練習課題7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7qq-8s-BDJ">
+                                                    <rect key="frame" x="16" y="4" width="351" height="36"/>
+                                                    <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="7qq-8s-BDJ" firstAttribute="leading" secondItem="RMu-PI-0NT" secondAttribute="leading" constant="16" id="YuB-bQ-eLA"/>
+                                                <constraint firstAttribute="bottom" secondItem="7qq-8s-BDJ" secondAttribute="bottom" constant="4" id="gpd-8j-Yn6"/>
+                                                <constraint firstAttribute="trailing" secondItem="7qq-8s-BDJ" secondAttribute="trailing" constant="16" id="knl-Oi-vPF"/>
+                                                <constraint firstItem="7qq-8s-BDJ" firstAttribute="top" secondItem="RMu-PI-0NT" secondAttribute="top" constant="4" id="lmI-y9-vvE"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="N0x-4P-MY0" kind="show" id="Pwm-QH-Gz9"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -243,7 +267,17 @@ UIStackView を使用し、より複雑な画面に柔軟に対応します。</
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="unT-tg-Mf6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2469" y="33"/>
+            <point key="canvasLocation" x="2456" y="32"/>
+        </scene>
+        <!--SeventhViewController-->
+        <scene sceneID="j35-pX-Vuv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SeventhViewController" id="N0x-4P-MY0" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="i2a-Jd-pQF"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="awL-oE-9ZH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2469" y="66"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3pU-y2-aUD">
